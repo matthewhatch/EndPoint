@@ -1,4 +1,4 @@
-﻿Import-Module EndPoint -force
+﻿Import-Module $PSScriptRoot\EndPoint.psm1 -force
 $Path = './TestScript.ps1'
 Describe 'New-ConfigurationScript' {
     New-ConfigurationScript -Cmdlet 'Get-Help' -Application 'ping' -Script 'Test.ps1' -Alias 'cls' -Path $Path
