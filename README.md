@@ -25,5 +25,8 @@
 	
 ##Example
 ```powershell
-New-ConfigurationScript -Cmdlet Get-Process,Get-Service,Get-ChildItem -Alias dir -Script './somescript.ps1' -Path 'C:\Path\To\Config\Script\Configuration.ps1'
+New-ConfigurationScript `
+    -Cmdlet Get-Process,Get-Service,Get-ChildItem `
+    -Alias dir -Script './somescript.ps1' `
+    -Path 'C:\Path\To\Config\Script\Configuration.ps1'
  ```   
