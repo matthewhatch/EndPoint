@@ -2,28 +2,28 @@
 
 [![Join the chat at https://gitter.im/matthewhatch/EndPoint](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/matthewhatch/EndPoint?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-##SYNOPSIS
+####SYNOPSIS
     Script Generator for Configuration Scripts
 
-##DESCRIPTION
+####DESCRIPTION
     Generates a script to be used to secure a custom Powershell Endpoint by limiting the commands that can be run
 
-##PARAMETER Cmdlet
+####PARAMETER Cmdlet
     Cmdlets that you would like to be available on the endpoint
 
-##PARAMETER Application
+####PARAMETER Application
     Applications that you would like to be available on the endpoint
 
-##PARAMETER Alias
+####PARAMETER Alias
     Alias that you would like to be available on the endpoint
 
-##PARAMETER Script
+####PARAMETER Script
     Scripts that you would like to be available on the endpoint
 
-##PARAMETER Path
+####PARAMETER Path
     Output path where the script will be written
 	
-##Example
+####Example
 ```powershell
 New-ConfigurationScript `
     -Cmdlet Get-Process,Get-Service,Get-ChildItem `
