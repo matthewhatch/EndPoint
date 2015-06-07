@@ -24,4 +24,6 @@
     Output path where the script will be written
 	
 ##Example
+```powershell
 New-ConfigurationScript -Cmdlet Get-Process,Get-Service,Get-ChildItem -Alias dir -Script './somescript.ps1' -Path 'C:\Path\To\Config\Script\Configuration.ps1'
+ ```   
