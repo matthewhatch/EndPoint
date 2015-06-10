@@ -1,6 +1,10 @@
 ﻿Import-Module $PSScriptRoot\EndPoint.psm1 -force
 $Path = './TestScript.ps1'
 Describe 'New-ConfigurationScript' {
+    
+    AfterAll{
+        Remove-Item $Path
+    }
     New-ConfigurationScript -Cmdlet 'Get-Help' -Application 'ping' -Script 'Test.ps1' -Alias 'cls' -Path $Path
     
     It 'Should create a script in the indicated path'{
@@ -25,7 +29,6 @@ Describe 'New-ConfigurationScript' {
         $Path | Should contain "\[string\[\]\]\`$PublicScripts = 'Test.ps1'"
     }
 
-    Remove-Item $Path
 }
 
 #Really not sure how to write tests for this
